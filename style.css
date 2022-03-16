@@ -6,6 +6,8 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth;
 }
 
 /* PORTADA */
@@ -57,8 +59,10 @@ header .logo{
 
 .logo img{
     width: 80px;
-    transition: all 100ms;
+    transition: all 600ms;
 }
+
+
 
 .logo img:hover{
     width: 120px;
@@ -102,13 +106,15 @@ nav ul li a{
 nav ul li a:hover{
     transition: ease-in 200ms;
     box-shadow: 1px 1px 8px #00000090;
-    color: white;
+    color: black;
+    font-weight: 600;
 }
 
 .nav_mod{
     height: 70px;
     box-shadow: 1px 1px 10px 0px #00000010;
     background: rgba(0, 255, 242, 0.699);
+    border-radius: 50px;
 }
 
 .btn__menu{
@@ -143,7 +149,8 @@ nav ul li a:hover{
 }
 
 .select:hover{
-    color: rgb(255, 255, 255);
+    color: black;
+    font-weight: 600;
     font-size: 13px;
     background-position: right;
     transition: 500ms ease;
@@ -358,7 +365,7 @@ nav ul li a:hover{
 .wave{
     width: 6000px;
     height: 100%;
-    background-image: url(../images/wd1.svg);
+    background-image: url(../Front-End/images/wd1.svg);
     position: absolute;
     top: 150px;
     bottom: 300px;
@@ -521,4 +528,407 @@ body{
     box-shadow: 1px 1px 30px 0px #449de6;
 }
 
-/* Logo con movimiento en javascript */
+.seccion{
+    *background-color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 250px;
+    position: inherit;
+}
+
+/* Cards de evaluaciones */
+
+.seccion, #evaluaciones{
+    margin-top: 10px;
+    flex: auto;
+}
+.container__card1{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    *background-color: firebrick;
+    
+
+}
+
+
+.cardz{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    font-family: sans-serif;
+    *margin-top: 200px;
+    *background-color: #f8f8f8;
+    transition: all 600ms;
+    
+}
+.cardz:hover{
+    box-shadow: 1px 1px 20px -5px #20202049;
+    transition: all 400ms;
+}
+.cardz:hover .info__description1{
+    margin-top: 0;
+    transition: all 400ms;
+}
+
+
+
+#hcard{
+    *background-color: rgb(238, 46, 46);
+    
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background-color: #fafafa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 500ms;
+}
+
+.icon i{
+    font-size: 150px;
+    *color: #fff;
+}
+
+.info__description1{
+    width: 100%;
+    height: 220px;
+    color: #000000;
+    padding: 20px;
+    margin-top: -220px;
+    background-color: white;
+    transition: all;
+    transition: 500ms;
+    
+}
+
+.info__description1 p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    -moz-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.info__description1 input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    color: white;
+    background-color: #2196f3;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+    
+}
+
+.info__description1 input:hover{
+    box-shadow: 1px 1px 30px px #20202080;
+}
+
+
+/*card1*/
+#hcard1:hover .icon{
+    background: red;
+}
+#hcard1 .icon i{
+    color: red;
+    
+}
+
+#hcard1:hover .icon i{
+    color: white;
+}
+
+/*card2*/
+#hcard2:hover .icon{
+    background: rgb(0, 162, 255);
+}
+#hcard2 .icon i{
+    color: rgb(0, 162, 255);
+    
+}
+
+#hcard2:hover .icon i{
+    color: white;
+}
+
+/*card3*/
+#hcard3:hover .icon{
+    background: rgb(46, 180, 5);
+}
+#hcard3 .icon i{
+    color: rgb(46, 180, 5);
+    
+}
+
+#hcard3:hover .icon i{
+    color: white;
+}
+/*card4*/
+#hcard4:hover .icon{
+    background: rgb(18, 168, 156);
+}
+#hcard4 .icon i{
+    color: rgb(18, 168, 156);
+    
+}
+
+#hcard4:hover .icon i{
+    color: white;
+}
+
+/*card5*/
+#hcard5:hover .icon{
+    background: rgb(216, 178, 10);
+}
+#hcard5 .icon i{
+    color: rgb(216, 178, 10);
+    
+}
+
+#hcard5:hover .icon i{
+    color: white;
+}
+
+/*footer*/
+
+footer{
+    *width: 100%;
+    *padding: 0px 0px;
+    *background:rgb(233, 239, 243);
+    *background-size: cover;
+    *border-radius: 8px;
+    *margin-bottom: 0;
+
+}
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0px 10px;
+    
+    
+}
+
+.box__footer .logo img{
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+    
+}
+
+.box__footer h2{
+    margin-bottom: 10px;
+    color: #343434;
+    font-weight: 700;
+    
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10px 10px;
+}
+#Soluciones{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-align: justify;
+    margin: 0px 10px;
+}
+#Compañia{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-align: justify;
+    margin: 0px 10px;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+.box__footer a .fab{
+    font-size: 20px;
+}
+.box__footer a .fa-brands{
+    font-size: 20px;
+    
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    color: #343434;
+}
+
+#footer{
+    background:rgb(233, 239, 243);
+}
+#linkformulario{
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/*FORMULARIO*/
+form {
+    /* Centrar el formulario en la página */
+    margin: 150px;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 30px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #2196f3;
+    color: white;
+    box-shadow: 2px 1px 1px 1px black;
+    text-shadow: 1px 1px black;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li {
+    margin-top: 60px;
+    font-size: 20px;
+    *text-align: justify;
+    *align-items: flex-start;
+    *display: flexbox;
+    *width: 40px;
+    font-weight: 700;
+  }
+  #User_mail{
+      font-weight: 700;
+  }
+
+  label {
+    /* Tamaño y alineación uniforme */
+    *display: inline-block;
+    width: 90px;
+    *text-align: right;
+  }
+  
+  #name, #mail, #msg,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 20px sans-serif;
+    margin-top: 5px;
+    text-align: start;
+    justify-content: center;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border:rgba(0, 0, 0, 0.103);
+    border-radius: 7px;
+  }
+  
+  input:focus, #name
+  textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: rgba(0, 0, 0, 0.103);
+  }
+  
+
+  textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    *padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    *margin-left: .5em;
+  }
+
+#submitt{
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    *margin-right: 60px;
+    margin-top: 12px;
+    background-size: 900px;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 200px;
+    transition: all 400ms;
+    cursor: pointer;
+
+}
+#submitt:hover{
+    width: 300px;
+    font-size: 19px;
+}
